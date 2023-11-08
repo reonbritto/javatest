@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('version') {
       steps {
-        sh 'java --version'
+        java --version
       }
     }
     stage('hello') {
       steps {
-        sh 'java reon.java'
+        java reon.java
       }
     }
   }
